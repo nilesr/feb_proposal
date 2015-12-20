@@ -1,0 +1,85 @@
+Sorting Algorithms
+
+Bubble Sort
+
+@bubble_sort_1.png
+
+Loop forever
+    Set some value to False
+    If the current element is greater than the next element
+        Swap them
+        Set the value to True
+    Move forward one
+    If we're at the end of the array, and the value is false
+        exit
+    Go back to the beginning of the array
+
+@bubble_sort_2.png
+
+@bubble_sort_3.png
+
+@bubble_sort_4.png
+
+@bubble_sort_5.png
+
+@bubble_sort_6.png
+
+@bubble_sort_7.png
+
+@bubble_sort_8.png
+
+@bubble_sort_9.png
+
+@bubble_sort_10.png
+
+One
+Two
+Skip a few
+
+@bubble_sort_11.png
+
+Reset value
+
+Do it all over again
+
+@bubble_sort_12.png
+
+Skipping ahead
+
+@bubble_sort_13.png
+
+Several iterations later
+
+@bubble_sort_14.png
+
+@bubble_sort_15.png
+
+@bubble_sort_16.png
+
+Sorted!
+
+Efficent?
+
+No
+Very long and tedious
+
+Solution
+Quicksort
+
+Pick a pivot
+For each value
+    If it is less than the pivot
+        Move it to the left of the pivot
+    If it is greater than the pivot
+        Move it to the right
+Recurse
+
+@quicksort_1.png
+
+@quicksort_2.png
+
+@quicksort_3.png
+
+@quicksort_4.png
+
+@quicksort_5.png

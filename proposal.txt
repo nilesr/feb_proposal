@@ -1,0 +1,21 @@
+Algorithms
+Day 1
+15 minutes -> KTANE
+15 minutes -> groups with paper cards, one person has a hash map (letter -> number), other person has set of letters, letters must be ordered by number
+5 minutes -> Share most efficent ways
+15 minutes -> Slides on the various sorting algorithms
+6 minutes -> 15 sorting algorithms in 6 minutes
+15 minutes -> Brainstorm compression algorithms
+10 minutes -> Slides on compression algorithms
+5 minutes -> Slides on hashing algorithms
+15 minutes -> Brainstorm encryption with shared secrets
+15 minutes -> Slides on encryption with shared secrets i.e. CRAM
+5 minutes -> Brainstorm on encryption without shared secrets
+10 minutes -> Slides on encryption without shared secrets i.e. Diffie-Hellman
+
+Day 2
+5 mins -> Seeing mazes
+5 mins -> Blind mazes
+5 mins -> Slides on Lee's algorithm
+5 mins -> Slides on Djaikstra's algorithm
+15 mins -> Adding algorithm video
