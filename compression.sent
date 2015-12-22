@@ -1,0 +1,92 @@
+Compression
+
+Step 1:
+        Compressing Text
+
+Method 1
+Glossary
+
+I think computers are fun.
+You can do a lot of things with computers.
+I send people emails on my computer.
+
+Glossary Begin
+<1> = Computer
+Glossary End
+Text begin
+I think <1>s are fun.
+You can do a lot of things with <1>s.
+I send people emails on my <1>.
+Text end
+
+<1>computer<0>I think <1>s are fun.
+You can do a lot of things with <1>s.
+I send people emails on my <1>.
+
+96 Characters
+Original was 107 
+89.7% ratio
+
+Method 2
+Offset + length
+
+I think computers are fun.
+You can do a lot of things with computers.
+I send people emails on my computer.
+
+I think computers are fun.
+You can do a lot of things with <50:9>.
+I send people emails on my <29:8>.
+
+92 characters
+Original was 107
+86% ratio
+
+@xz.png
+
+Compressing Images
+
+How are images stored
+
+Pixels
+Each pixel is made of three identifiers
+
+Any color can realistically be represented using the colors red, green and blue
+
+Because a byte will never be a letter in an image, we can have identifiers up to 255
+
+<255><255><255> would be a white pixel
+
+<255><255><255> <255><255><255> <255><255><255> 
+<255><255><255> <255><255><255> <255><255><255> 
+<255><255><255> <255><255><255> <255><255><255> 
+would be an entirely white 3x3 image
+It has nine pixels
+
+Most images have hundreds, usually tens of thousands of pixels.
+
+Method 1:
+Less specific colors
+
+If you know an identifier will never have a value above 127
+It takes up 7/8ths of the space
+
+So what you can do is divide each value by two for storage
+
+<127><127><127> <127><127><127> <127><127><127> 
+<127><127><127> <127><127><127> <127><127><127> 
+<127><127><127> <127><127><127> <127><127><127> 
+
+When you go to display it on the screen or print it again
+just multiply each one by two first
+
+Method 2:
+Change
+
+In each identifier only record the difference between the previous pixel.
+
+No example because I'm lazy
+Picture it in your head
+
+Method 3:
+
