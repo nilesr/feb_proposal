@@ -12,13 +12,14 @@ Day 1
 5 minutes -> Brainstorm encryption with shared secrets
 5 minutes -> Share encryption algorithm ideas
 5 minutes -> Slides on hashing algorithms
-5 minutes -> Share ideas on key-based authentication
+5 minutes -> Brainstorm authentication
+5 minutes -> Share authentication ideas
 5 minutes -> Slides on CRAM
+
+Day 2
 5 minutes -> Brainstorm on encryption without shared secrets
 5 minutes share
 10 minutes -> Slides on encryption without shared secrets i.e. Diffie-Hellman
-
-Day 2
 5 mins -> Seeing mazes
 5 mins -> Blind mazes
 5 mins -> Slides on Lee's algorithm
