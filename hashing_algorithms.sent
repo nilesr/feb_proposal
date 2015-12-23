@@ -1,0 +1,39 @@
+Hashing
+
+Magic
+
+Really just a magic black box
+
+Takes in some data
+Outputs some other data
+
+It is a mathematical function
+Different inputs will (theoretically) never make the same outputs
+(it passes the vertical line test)
+
+Output looks like crap
+
+"apple" ->
+30C6677B833454AD2DF762D3C98D2409
+
+"banana" -> DF3E129A722A865CC3539B4E69507BAD
+"cookie" -> BE154E2343408CAA1F11AB3445BDD34C
+"apple"  -> 30C6677B833454AD2DF762D3C98D2409
+
+This is how computers store passwords
+
+\
+
+Assume you are Bob, and you want to talk to Alice.
+You and Alice have previously agreed on a secret key
+    to use to encrypt and decrypt each other's messages,
+    but Eva, your mail carrier, is reading your mail.
+You want to make sure you're talking to the real Alice
+    and not an imposter.
+How do you verify that she has the right password?
+
+If you just say "Hey what's the password" and Alice sends you
+    the password, Eva will have the password too, 
+    and will be able to decrypt your messages or even forge new ones
+
+How do you verify that Alice has the right password
