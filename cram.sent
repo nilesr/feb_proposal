@@ -1,0 +1,64 @@
+Authentication over clear text communication
+
+CRAM
+
+Challenge Response Authentication Mechanism
+
+You (Bob) need to make sure
+    that Alice has the right password
+    without sending the password or the hash
+    through the mail
+
+For this example, the password is "apple"
+
+Step 1.
+
+Generate some random letters
+
+For this example, the random letters
+    we generate are "azq"
+
+Step 2.
+
+Send Alice the letters
+
+Alice now knows the challenge: "azq" and the password: "apple"
+
+Step 3.
+
+Alice combines the password with the random letters
+
+"appleazq"
+
+Step 4.
+
+Alice sends back the hash of "appleazq"
+
+CA3D135F8CD2677B816FE35D5F0C64B8
+
+Step 5.
+
+Bob confirms that Alice has the same password by generating the same hash
+
+Eva
+
+- Eva knows that the challenge was "azq"
+- Eva knows the hash of the password and "azq"
+
+Eva cannot determine the password from this information
+
+Because a new challenge is generated on every connection
+    Eva cannot simply send back the hash that she read earlier
+
+Questions?
+
+New scenario
+
+You and Alice want to send encrypted messages between each other
+
+But
+
+You do NOT have a shared key
+
+How can we share a randomly generated key
+    without Eva reading it

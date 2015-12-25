@@ -1,0 +1,91 @@
+Encryption without shared secrets
+
+Diffie-Hellman
+
+We want to send encrypted messages
+
+I decide to generate a random password
+
+The password I generate is "cfzpz"
+
+Alice does not know this password, so
+    if I encrypt a message with this password
+    and send it, Alice won't be able to understand it
+
+I need to send Alice the password
+Without Eva knowing it
+
+Example 1
+
+@wikipedia_diffie_hellman.png
+
+#@box.png
+#TODO
+
+#@locker_lock.png
+#TODO
+
+Example 2
+
+If I send you the box with my lock on it
+
+You put your own lock on the box and send it back
+
+I take my lock off, so now it only has your lock
+    and send it back
+
+You take your lock off and now you can open it
+
+It was sent through the mail three times
+
+Each time it had a lock on it
+
+Eva can never open the box
+
+Example 3
+
+I convert each letter to it's number
+a = 1, b = 2, c = 3, etc..
+
+Password is now 3, 6, 26, 16, 26
+
+m = 3
+
+I generate a very large random number and don't tell anyone what it is
+
+This large random number is a
+
+I multiply the message by the number to get m*a
+
+I send Alice this number
+
+Alice generates a very large random number (b) and doesn't tell anyone what it is
+
+Alice multiplies what I sent her by b and sends it back
+
+m*a*b
+
+I divide what she sends me by my number, a, to get m*b
+
+I send back the result of that, m*b
+
+Alice divides what I sent her by her number (b) to get m
+
+Alice now knows m is 3
+
+Repeat for the rest of the leters in the encryptopn key
+
+Don't do that
+
+This is very insecure
+
+Eva knows what m*a, m*b and m*a*b are
+
+Eva can compute (m*a)(m*b)/(m*a*b) to get m.
+
+In the real world, this isn't used
+
+Example 4
+
+# TODO insert real method from wikipedia using modulo here
+
