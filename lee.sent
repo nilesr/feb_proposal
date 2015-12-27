@@ -1,3 +1,23 @@
 Lee's Algorithm
 
 Solves mazes when you can see the whole map
+
+Step 1
+
+Start at the end
+
+For each adjacent square
+write a 1
+
+For each of those
+find an adjacent unmarked square
+Mark that 2
+
+Continue until a square adjecent to the maze start is marked
+
+Begin the maze
+Always move to the lower numbered square
+
+@lee_1.png
+
+@lee_2.png

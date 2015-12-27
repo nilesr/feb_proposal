@@ -87,5 +87,68 @@ In the real world, this isn't used
 
 Example 4
 
-# TODO insert real method from wikipedia using modulo here
+How it's really done
 
+Modulo
+
+What is 10/25
+
+It's 2
+
+To a computer, 10/25 is 2 because 10 goes into 25 two times
+
+We know it as two remainder five
+
+The modulo operator (%) gets the remainder
+
+In the mind of a computer
+10/25 = 2
+10%25 = 5
+
+Back to Diffie-Hellman
+
+You tell Alice to use modulus 23 and base 5
+
+23 is randomly generated
+
+5 a is primitave root modulo 23
+
+You generate a random number that you don't tell anyone
+
+It's 6
+
+Alice generates a random number that she doesn't tell anyone
+
+It's 15
+
+You calculate and send
+5 to the power of your secret number (6) modulo 23
+8
+
+Alice calculates and sends
+5 to the power of her secret number (15) modulo 23
+19
+
+Bob calculates
+19 to the power of his secret number (6) modulo 23
+2
+
+Alice calculates
+8 to the power of her secret number (15) modulo 23
+2
+
+The key to be used for encryption is 2
+
+In Reality
+
+Usually the number is not 23
+
+A prime number at least 600 digits long
+
+There is no known solution to the discrete logarithm problem
+
+The general theory is
+
+Even if someone knows g^a, g^b and g^(a*b)
+
+It is very hard to calculate a and b
