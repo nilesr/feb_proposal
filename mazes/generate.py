@@ -17,9 +17,17 @@ mazea_solved = [[["E"],   [s,"1"],    [s,"2"],     [s,"3"],    ["4"],   [s,"5"]]
                 [["5"],   [n,"6"],    [n,"7"],     ["8"],      [n,"9"], [n, "S"]]
         ]
 
+mazeb = [   [[],[],    [],    [e],    [w],  []],
+            [[],  [e], [w, s], [e], [w, s], [s]],
+            [[],  [e], [e, s, n, w], ["E", w, s], [n], [n]],
+            [[],  [], [n, s, e, "S"],    [n, s, e, w],    [w],  []],
+            [[],   [s, e],    [w, n],    [n],     [], []],
+            [[],   [n],    [],    [],     [], []]
+        ]
 mazes = [
       [mazea, "1.png"]
     , [mazea_solved, "1_solved.png"]
+    , [mazeb, "2.png"]
     ]
 for maze_struct in mazes:
     f = Image.new("RGB",(600, 600),(255,255,255))
