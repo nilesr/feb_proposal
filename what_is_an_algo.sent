@@ -1,0 +1,28 @@
+Algorithms
+
+What is an algorithm
+
+Two important ideas
+
+1. Instructions
+
+2. Repetition
+
+How would you count everybody in this room
+
+i = 0
+Starting at the left
+Go from left to right
+Each time you see a person
+i = i + 1
+
+What's another way to do it?
+
+i = 0
+Have everybody stand up
+Begin
+Make half the room sit down
+i = i + 1
+If there is only one person standing up, end
+
+After we've ended, the number of people in the room is two to the power of i

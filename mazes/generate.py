@@ -24,10 +24,22 @@ mazeb = [   [[],[],    [],    [e],    [w],  []],
             [[],   [s, e],    [w, n],    [n],     [], []],
             [[],   [n],    [],    [],     [], []]
         ]
+
+
+mazec = [   [[],  [],    [],    [],    [],  []],
+            [[s],  [s], [s], [], [s], [s]],
+            [[n, s],  [n, s], [n, s], [s], [n], [n]],
+            [[n, s],  [n, s], [n, s], [n, s, e],    [w, e],  [w]],
+            [[n],  [s, n],    [s, n],    [n, s],     [s, e], [w]],
+            [[],  [n],    [n, "S"],    [n],     [n, e], [w, "E"]]
+        ]
+
+
 mazes = [
       [mazea, "1.png"]
     , [mazea_solved, "1_solved.png"]
     , [mazeb, "2.png"]
+    , [mazec, "3.png"]
     ]
 for maze_struct in mazes:
     f = Image.new("RGB",(600, 600),(255,255,255))

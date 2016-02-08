@@ -1,5 +1,6 @@
 Algorithms
 Day 1
+2 minutes -> What is an algorithm
 15 minutes -> KTANE
 10 minutes -> groups with paper cards, one person has a hash map (letter -> number), other person has set of letters, letters must be ordered by number
 5 minutes -> Share most efficent ways
