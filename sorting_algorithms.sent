@@ -6,11 +6,13 @@ Bubble Sort
 
 Loop forever
     Set some value to False
-    If the current element is greater than the next element
-        Swap them
-        Set the value to True
-    Move forward one
-    If we're at the end of the array, and the value is false
+	Loop until we're at the end of the array
+		If the current element is greater than the next element
+			Swap them
+			Set the value to True
+		Move forward one
+	# At this point we're at the end of the array
+    If the value is false
         exit
     Go back to the beginning of the array
 
